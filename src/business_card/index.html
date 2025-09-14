@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>個人名片</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background: lightgrey;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            /* reset browser default style */
+            h1, h2 {
+                margin: 0;
+                padding: 0;
+            }
+            .card {
+                display: flex;
+                background: #fff;
+                max-width: 640px;
+                margin: 32px;
+                padding: 32px;
+                border-radius: 20px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+                text-align: center;
+            }
+            .card .avatar {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-top: 16px;
+                padding: 8px;
+                border: 1px solid lightgray;
+                transition: all 0.5s;
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+            .card .info {
+                margin-left: 32px;
+                text-align: left;
+            }
+            .card h1 {
+                font-size: 1.5rem;
+                color: #333;
+            }
+            .card h2 {
+                font-size: 1.25rem;
+                color: #666;
+                font-weight: normal;
+                margin-top: 8px;
+            }
+            .card p {
+                font-size: 1rem;
+                color: #666;
+                line-height: 1.5;
+                margin-top: 16px;
+                a {
+                    color: #333;
+                    text-decoration: underline;
+                    text-decoration-style: dotted;
+                    text-decoration-color: #999;
+                    text-decoration-thickness: 1px;
+                }
+            }
+            .links a {
+                display: inline-block;
+                margin: 0 8px;
+                padding: 8px 14px;
+                font-size: 0.85rem;
+                color: #fff;
+                background: #0984e3;
+                border-radius: 8px;
+                text-decoration: none;
+                transition: background 0.3s;
+            }
+            .links a:hover {
+                background: #74b9ff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img class="avatar" src="./avatar.jpg" alt="avatar">
+            <div class="info">
+                <h1>昌維 Chang Wei</h1>
+                <h2>Adult and Continuing Education, Ph.D.</h2>
+                <p>
+                    I'm a student from NTNU(National Taiwan Normal University). <br>
+                    I like computer programming and doing something interesting.
+                    You could follow me on Instagram <a href="https://www.instagram.com/changwei1997/" target="_blank">@changwei1997</a>
+                </p>
+                <div class="links">
+                    <a href="mailto:changwei1006@gmail.com">Email</a>
+                    <a href="https://github.com/cw1997" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/changwei1006" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
